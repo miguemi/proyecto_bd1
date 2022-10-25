@@ -1,10 +1,18 @@
 body {
   font-family: 'Lora';
-  background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../img/bg_main.jpg");
+
+  background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../img/gift/stock.gif");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  
+  
+  
 }
+
+
+
+
 
 h1,
 h2,
@@ -20,7 +28,7 @@ p {
 }
 
 .text-faded {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(19, 179, 27, 0.3);
 }
 
 .site-heading {
@@ -76,11 +84,11 @@ p {
 }
 
 .bg-faded {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(94, 196, 35, 0.85);
 }
 
 #mainNav {
-  background-color: rgb(51, 80, 5);
+  background-color: rgb(11, 98, 148);
   font-family: 'Raleway';
 }
 
@@ -103,7 +111,7 @@ p {
     font-size: 0.9rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: rgba(255, 255, 255, 0.4);
+    color: rgb(207, 219, 238);
     text-decoration: underline;
   }
   #mainNav .navbar-nav .nav-item.active .nav-link:hover {
@@ -134,7 +142,7 @@ p {
     left: 600;
     width: 60%;
     margin-top: 3rem;
-    background-color: rgb(74, 88, 8);
+    background-color: rgb(40, 98, 165);
     color: cornsilk;
     position: absolute;
   }
@@ -155,14 +163,14 @@ p {
 .cta {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: rgb(24, 53, 5);
+  background-color:opacity(6, 46, 83);
 }
 
 .cta .cta-inner {
   position: relative;
   padding: 3rem;
   margin: 0.5rem;
-  background-color: rgb(107, 134, 8);
+  background-color: rgb(12, 76, 119);
   color: cornsilk;
 }
 
@@ -229,7 +237,7 @@ p {
 }
 
 .footer {
-   background-color: rgba(24, 64, 8, 0.8);
+   background-color: rgba(23, 96, 156, 0.8);
 }
 
 
@@ -288,7 +296,7 @@ ul.errorlist{
 
 }
 .contenedorFormulario{
-  background-color:  rgba(24, 64, 8);
+  background-color:  rgb(18, 72, 103);
   width: 50%;
   margin: 10px auto;
   border-radius: 5px;

@@ -15,6 +15,7 @@
      <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
      
 
+
     <!-- Styles -->
     <link href="{% static 'ProyectoWebApp/css/gestion.css' %}" rel="stylesheet">
 </head>
@@ -22,17 +23,20 @@
 <body>
 
     <h1 class="site-heading text-center text-white d-none d-lg-block">
-      
-        <span class="site-heading-lower">Gestión de Pedidos</span>
+     
+        <span
+         style="font-weight: 800;" style="color:white"; class="site-heading-lower">
+        <font size=20 <font face="Comic Sans MS"color="white">Gestión de Pedidos</font>
+       </span>
       </h1>
 
       <div style="text-align: right; margin-right: 100px; color: white; ">
         
         {% if user.is_authenticated %}
-        Hola {{user.username}} &nbsp;&nbsp;<a href="{% url 'cerrar_sesion' %}" style="color: white;">Cerar sesión</a>
+        Hola {{user.username}} &nbsp;&nbsp;<a href="{% url 'cerrar_sesion' %}"style="margin: 5px;" class="btn btn-primary" style="color: white;">Cerar sesión</a>
 
         {% else %}
-        <a href="{% url 'logear' %} " style="color: white;">Login</a> &nbsp; &nbsp; <a href="{% url 'Autenticacion' %} " style="color: white;">Regístrate</a>
+        <a href="{% url 'logear' %} " style="margin: 5px;" class="btn btn-success" style="color: white;">Login</a> &nbsp; &nbsp; <a href="{% url 'Autenticacion' %} " class="btn btn-success" style="color: white;">Regístrate</a>
      
         {% endif %}
 
@@ -102,11 +106,11 @@
 	        </a>
 	    </p>
         <p class="m-0 mbt">
-        	<a href="sample.html" class="link">Política de privacidad</a> ·
-        	<a href="sample.html" class="link">Aviso legal</a> ·
-        	<a href="sample.html" class="link">Cookies</a>
+        	<a href="sample.html" style="color:white;", class="link">Política de privacidad</a> ·
+        	<a href="sample.html" style="color:white;", class="link">Aviso legal</a> ·
+        	<a href="sample.html" style="color:white;", class="link">Cookies</a>
 		</p>
-        <p class="m-0 mbt1">&copy; Gestión de Pedidos 2020</p>
+        <p style="color:white;", class="m-0 mbt1">&copy; Gestión de Pedidos 2022</p>
       </div>
 	</footer>
 

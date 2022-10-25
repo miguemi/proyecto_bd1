@@ -3,15 +3,10 @@ from django.shortcuts import redirect, render
 
 from django.contrib.auth.decorators import login_required
 from carro.carro import Carro
-
 from pedidos.models import LineaPedido, Pedido
-
 from django.template.loader import render_to_string
-
 from django.utils.html import strip_tags
-
 from django.core.mail import send_mail
-
 from .models import Producto
 
 
@@ -20,10 +15,10 @@ from .models import Producto
 
 @login_required(login_url='/autenticacion/logear')
 def procesar_pedido(request):
-    pedido=Pedido.objects.create(user=request.user) # damos de alta un pedido
-    carro=Carro(request)  # cogemos el carro
-    lineas_pedido=list()  # lista con los pedidos para recorrer los elementos del carro
-    for key, value in carro.carro.items(): #recorremos el carro con sus items
+    pedido=Pedido.objects.create(user=request.user) 
+    carro=Carro(request)  
+    lineas_pedido=list()  
+    for key, value in carro.carro.items():
         lineas_pedido.append(LineaPedido(
             producto_id=key,
             cantidad=value['cantidad'],
@@ -31,7 +26,7 @@ def procesar_pedido(request):
             pedido=pedido                 
             ))
 
-    LineaPedido.objects.bulk_create(lineas_pedido) # crea registros en BBDD en paquete
+    LineaPedido.objects.bulk_create(lineas_pedido) 
     #enviamos mail al cliente
     enviar_mail(
         pedido=pedido,
