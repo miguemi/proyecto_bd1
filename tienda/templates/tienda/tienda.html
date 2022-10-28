@@ -27,14 +27,16 @@
 <div class="col-md-3">
     <div class="card" style="width: 100%; margin: 5px 5px;">
 
-        <img src="{{producto.imagen.url}}" class="card-img-top">
 
+        
+        
+        <div class="d-flex justify-content-center mt-2">
+            <img src="{{producto.imagen.url}}" class="card-img-top">
+        </div> 
+       
         <div class="card-body" style="text-align: center;">
-
             <h7 class="card-title">{{producto.nombre}}</h7>
-
             <p class="card-text">{{producto.precio}}&nbsp;Q</p>
-<!--</div> -->
         </div> 
         <div class="card-footer text-center">
             <a href="{% url 'carro:agregar'  producto.id %}" class="btn btn-success">Añadir al carro</a>

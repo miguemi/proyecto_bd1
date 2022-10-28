@@ -302,3 +302,11 @@ ul.errorlist{
   border-radius: 5px;
   padding: 1px 0px;
 }
+
+.card-img-top {
+  float: left;
+  width:  100px;
+  height: 100px;
+  background-size: cover;
+}
+
