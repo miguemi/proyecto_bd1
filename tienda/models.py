@@ -3,7 +3,6 @@ from hashlib import blake2b
 from mailbox import NoSuchMailboxError
 from statistics import mode
 from tabnanny import verbose
-from tkinter import image_names
 from django.db import models
 
 # Create your models here.
