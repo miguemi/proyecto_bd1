@@ -1,7 +1,6 @@
 from distutils.command.upload import upload
 from pyexpat import model
 from tabnanny import verbose
-from tkinter import image_names
 from django.db import models
 
 # Create your models here.
